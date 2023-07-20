@@ -1,0 +1,19 @@
+Login:
+  login:
+    url: /account/sLogin
+    method: post
+
+Logout:
+    url: xxx
+    method: get
+Shop:
+  query:
+    url: /shopping/myShop
+    method: get
+  update:
+    url: /shopping/updatemyshop
+    method: post
+  file_upload:
+    url: /file
+    method: POST
+Food:

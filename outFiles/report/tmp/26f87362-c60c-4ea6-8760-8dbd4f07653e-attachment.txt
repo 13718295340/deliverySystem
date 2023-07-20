@@ -1,0 +1,9 @@
+INFO     common.baseAPI:baseAPI.py:35 2023-07-14 17:50:40.342 | INFO     | common.baseAPI:send_method:35 - 模块名:Shop,接口名:query
+        请求的url:http://42.192.62.8:8082/shopping/myShop?page=1&limit=-1
+        请求方法:GET
+        请求体:None
+        响应体:{'timestamp': '2023-07-14 17:50:41', 'status': 500, 'error': 'Internal Server Error', 'message': 'Page size must not be less than one!; nested exception is java.lang.IllegalArgumentException: Page size must not be less than one!', 'path': '/shopping/myShop'}
+ERROR    common.apiAssert:apiAssert.py:35 2023-07-14 17:50:40.342 | ERROR    | common.apiAssert:api_assert:35 - Traceback (most recent call last):
+  File "D:\deliverySystem\common\apiAssert.py", line 16, in api_assert
+    result, exp_result = str(result[assert_info]), str(exp_result[assert_info])
+KeyError: 'code'
